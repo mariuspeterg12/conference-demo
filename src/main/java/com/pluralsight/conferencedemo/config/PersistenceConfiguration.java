@@ -11,11 +11,11 @@ public class PersistenceConfiguration {
 
     @Bean
     public DataSource dataSource(){
-        DataSourceBuilder builder= DataSourceBuilder.create();
-        builder.url("jdbc:mysql://localhost:3306/conference_demo?characterEncoding=UTF-8");
-        builder.username("play11");
-        builder.password("Wt0r3k19");
+        DataSourceBuilder builder=DataSourceBuilder.create();
+        builder.url("jdbc:postgresql://localhost:5432/conference-demo");
+        builder.username("postgres");
+        builder.password("Pierdu35");
+        System.out.println("My custom datasource tralalal");
         return builder.build();
-
     }
 }
